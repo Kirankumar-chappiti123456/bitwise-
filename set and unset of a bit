@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,pos;
+    printf("enter the num and pos");
+    scanf("%d %d",&num,&pos);
+    if(num&(1<<pos-1))
+    {
+        printf("set");
+        
+    }
+    else
+    {
+        printf("unset");
+    }
+}
