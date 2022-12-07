@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned char i=2;
+    i=((i&0X0f)<<4)|((i&0Xf0)>>4);
+    printf("%u",i);
+}
+
+output :32
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int i=2;
+    i=((i&0X0f)<<4)|((i&0Xf0)>>4);
+    printf("%d",i);
+}
